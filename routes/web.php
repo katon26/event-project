@@ -22,3 +22,14 @@ Route::get('/myticket', 'UserTicketController@index')->name('myticket');
 Route::get('/mytransaction', 'UserTransactionController@index')->name('mytransaction');
 Route::get('/myprofile', 'UserProfileController@index')->name('myprofile');
 Route::get('/event', 'EventController@index')->name('event');
+
+/* buat coba liat tampilan login regis aja git ini apus aja ntar */
+Route::get('/login', function () {
+    return view('auth/login');
+});
+
+Route::get('/signup', function () {
+    return view('auth/signup');
+});
+
+/* buat coba liat tampilan login regis aja git ini apus aja ntar */

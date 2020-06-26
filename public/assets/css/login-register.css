@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: #B71C1C;
+  color: #303F9F;
 }
 
 a:hover, a:active, a:focus {
@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #B71C1C;
+  background: #303F9F;
   color: #fff;
 }
 
@@ -122,8 +122,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #headeruser.header-fixed {
   background-color: #212121;
-  /* background: rgb(33,33,33); */
-  /* background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(183,28,28,1) 100%); */
   padding: 12px 0;
   height: 60px;
   transition: all 0.5s;
@@ -142,7 +140,7 @@ Welcome User! - DASHBOARD
 --------------------------------*/
 #welcome-user {
   /* background-color: #0f0f0f; */
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center; */
   background-size: cover;
   padding: 80px 0;
   width: 100vw;
@@ -193,8 +191,8 @@ Welcome User! - DASHBOARD
 }
 
 #welcome-user .wu-btn:hover {
-  background: #B71C1C;
-  border: 2px solid #B71C1C;
+  background: #303F9F;
+  border: 2px solid #303F9F;
 }
 
 /*--------------------------------------------------------------
@@ -298,14 +296,14 @@ Welcome User! - DASHBOARD
   transition: 0.5s;
   margin: 0;
   border: 2px solid;
-  border-color: #B71C1C;
+  border-color: #303F9F;
   color: #fff;
 
 }
 
 #nav-menu-container .btn-login:hover {
-  background: #B71C1C;
-  border: 2px solid #B71C1C;
+  background: #303F9F;
+  border: 2px solid #303F9F;
 }
 
 #nav-menu-container .btn-register {
@@ -323,14 +321,14 @@ Welcome User! - DASHBOARD
   transition: 0.5s;
   margin: 0;
   border: 2px solid;
-  border-color: #B71C1C;
+  border-color: #303F9F;
   color: #fff;
 
 }
 
 #nav-menu-container .btn-register:hover {
-  background: #B71C1C;
-  border: 2px solid #B71C1C;
+  background: #303F9F;
+  border: 2px solid #303F9F;
 }
 
 
@@ -359,7 +357,7 @@ Welcome User! - DASHBOARD
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #B71C1C;
+  background-color: #303F9F;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -396,7 +394,7 @@ Welcome User! - DASHBOARD
 }
 
 .nav-menu ul li a:hover {
-  background: #B71C1C;
+  background: #303F9F;
   color: #fff;
 }
 
@@ -484,11 +482,11 @@ Welcome User! - DASHBOARD
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #B71C1C;
+  color: #303F9F;
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #B71C1C;
+  color: #303F9F;
 }
 
 #mobile-body-overly {
@@ -578,8 +576,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn:hover {
-  background: #B71C1C;
-  border: 2px solid #B71C1C;
+  background: #303F9F;
+  border: 2px solid #303F9F;
 }
 
 
@@ -591,7 +589,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #userpage {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) top center;
+  background: linear-gradient(120deg, #303F9F 40%, #000 30%);
   position: relative;
 }
 
@@ -658,13 +656,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid #B71C1C;
-  color: #B71C1C;
+  border: 2px solid #303F9F;
+  color: #303F9F;
 }
 
 #userpage .btn-get-started:hover {
-  background: #B71C1C;
-  border: 2px solid #B71C1C;
+  background: #303F9F;
+  border: 2px solid #303F9F;
   color: #fff;
 }
 
