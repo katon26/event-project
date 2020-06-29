@@ -666,6 +666,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+.yoi {
+    padding: .75rem 1.25rem;
+    margin-bottom: -20px;
+    margin-top: 40px;
+    background-color: transparent;
+    border-bottom: transparent;
+    color: #fff;
+}
+
 /* Buat form login-register */
 .form-control-akun {
   display: block;

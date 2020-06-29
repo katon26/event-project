@@ -127,6 +127,51 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
 }
 
+/* --------------------- */
+
+#headerBox {
+  padding: 20px 0;
+  margin-top: 92px;
+  margin-bottom: 50px;
+  background-color: #4b4b4b;
+  height: 180px;
+  /* position: fixed; */
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+#headerBox h1 {
+  font-size: 36px;
+  padding: 0;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+@media (min-width: 1200px){
+#headerBox {
+    max-width: 1357px;
+  }
+}
+
+@media (min-width: 769px) {
+  #headerBox .wu-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+#headerBox.header-fixed {
+  background-color: #4b4b4b;
+  padding: 20px 0;
+  height: 160px;
+  transition: all 0.5s;
+  margin-top: 60px;
+}
 
 /* ---------------------------- */
 
@@ -305,6 +350,7 @@ h1, h2, h3, h4, h5, h6 {
 Welcome User! - DASHBOARD
 --------------------------------*/
 #carousel {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center; */
   background: linear-gradient(#303F9F, rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center;
   background-size: cover;
   padding: 80px 0;
@@ -357,63 +403,6 @@ Welcome User! - DASHBOARD
   background: #303F9F;
   border: 2px solid #303F9F;
 }
-
-/* detailevent */
-
-#detailevent {
-  background: #172029;
-  background-size: cover;
-  padding: 80px 0;
-  position: relative;
-  margin-top: 92px;
-  margin-bottom: 50px;
-}
-
-@media (min-width: 1200px){
-#detailevent {
-    max-width: 1357px;
-  }
-}
-
-#detailevent .wu-title {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-#detailevent .wu-text {
-  color: #fff;
-}
-
-@media (min-width: 769px) {
-  #detailevent .wu-btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-}
-
-#detailevent .wu-btn {
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-#detailevent .wu-btn:hover {
-  background: #303F9F;
-  border: 2px solid #303F9F;
-}
-
-/* end of detailevent */
 
 /* buat Laporan-Saya*/
 #back-to-dashboard {
@@ -1041,7 +1030,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid #303F9F;
 }
 
-/* DETAIL EVENT */
+/* LAPORAN TERBARU */
 
   #detail-container  {
   margin-bottom: 50px;
@@ -1086,8 +1075,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #detail-container .user-activity-card .u-img .cover-img {
-    /* width: 60px; */
-    max-height: 400px;
+    width: 60px;
+    height: 60px;
 }
 
 #detail-container .m-b-25 {
@@ -1143,156 +1132,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 15px;
 }
 
-/* END DETAILEVENT */
-
-/* TICKET CATEGORY */
-
-.ticket-column {
-    -ms-flex: none!important;
-    flex: none!important;
-    -webkit-box-flex: 0!important;
-    min-width: 350px;
-    max-width: 358px;
-}
-
-.padside-12 {
-    margin: 0 12px;
-}
-
-.ticket-place {
-    position: absolute;
-    min-width: 370px;
-    -webkit-box-shadow: 0 1px 0 hsla(0,0%,77.6%,.4);
-    box-shadow: 0 1px 0 hsla(0,0%,77.6%,.4);
-    top: 30px;
-    right: 40px;
-}
-
-.ticket-header {
-    background: #fff;
-    height: 68px;
-    border: 1px solid #e5e5e5;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    border-radius: 5px 5px 0 0;
-    color: #172029;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 180%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-left: 19px;
-}
-
-.box-category {
-    width: 100%;
-    background-color: #fbfbfb;
-    border: 1px solid #e5e5e5;
-    padding: 25px;
-    overflow: auto;
-    padding: 25px 25px 5px 25px;
-}
-
-.btn-soldOut {
-    font-weight: 500;
-    color: #D32F2F!important;
-    cursor: default;
-
-}
-
-
-.priceTotal p:first-child {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: #828282;
-}
-
-.priceTotal p {
-    margin: 0;
-}
-
-.priceTotal p:nth-child(2) {
-    color: #f48a00;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    margin-top: 8px;
-}
-
-.checkOutBox {
-    border-radius: 0 0 5px 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background: #fff;
-    height: 80px;
-    border: 1px solid #e5e5e5;
-    padding: 16px;
-}
-
-.checkOutButton {
-    margin-left: auto;
-}
-
-.newButton {
-    background: #303F9F;
-    padding: 14px;
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #fff;
-}
-
-#buy-btn .wu-btn {
-    font-family: "Poppins", sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 8px 30px;
-    border-radius: 50px;
-    transition: 0.5s;
-    margin: 10px;
-    border: 2px solid #303F9F;
-    color: #303F9F;
-}
-
-#buy-btn .wu-btn:hover {
-  background: #fff;
-  border: 2px solid #303F9F;
-}
-
-/* .white-text {
-    color: #000!important;
-} */
-
-#ticketbuy {
-    max-width: 1200px;
-}
-
-#ticketbuy {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-
-
-/* END TICKET CATEGORY */
+/* END LAPORAN TERBARU */
 
 /* Contact Section
 --------------------------------*/
@@ -1575,19 +1415,12 @@ iframe {
 [  ]*/
 
 .wrap-input100 {
-
-  max-width: 420px;
-  height: 420px;
+  width: 100%;
   position: relative;
   border: 1px solid #e6e6e6;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 20px 20px 20px -20px;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
+  border-radius: 13px;
+  padding: 10px 30px 9px 22px;
+  margin-bottom: 20px;
 }
 
 .rs1-wrap-input100 {
@@ -1714,29 +1547,7 @@ textarea.input100 {
   }
 }
 
-@media (max-width: 768px) {
-   #ticketbuy .ticket-place {
-    position: inherit;
-    min-width: 350px;
-    -webkit-box-shadow: 0 1px 0 hsla(0,0%,77.6%,.4);
-    box-shadow: 0 1px 0 hsla(0,0%,77.6%,.4);
-    top: 30px;
-    margin-left: -21px;
-    margin-bottom: -50px;
-  }
-}
 
-@media (max-width: 576px) {
-  #ticktbuy .ticket-place {
-    position: inherit;
-    min-width: 350px;
-    -webkit-box-shadow: 0 1px 0 hsla(0,0%,77.6%,.4);
-    box-shadow: 0 1px 0 hsla(0,0%,77.6%,.4);
-    top: 30px;
-    margin-left: -21px;
-    margin-bottom: -50px;
-  }
-}
 
 /*------------------------------------------------------------------
 [ Alert validate ]*/
@@ -2136,8 +1947,6 @@ textarea.input100 {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
-  height: auto;
-  max-width: 100%;
 }
 
 #myImg:hover {opacity: 0.7;}
@@ -2192,7 +2001,7 @@ textarea.input100 {
 .close {
   position: absolute;
   /* top: 15px; */
-  right: 287px;
+  right: 35px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
@@ -2206,16 +2015,10 @@ textarea.input100 {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 700px){
-  .close {
-    right: 15px;
-  }
-}
-
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
-    width: 81%;
+    width: 100%;
   }
 }
 

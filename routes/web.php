@@ -33,3 +33,15 @@ Route::get('/signup', function () {
 });
 
 /* buat coba liat tampilan login regis aja git ini apus aja ntar */
+
+Route::get('/detailticket', function () {
+    return view('detailticket');
+});
+
+Route::get('/detailevent', function () {
+    return view('detailevent');
+});
+
+Route::get('/signup-org', function () {
+    return view('auth/signup-org');
+});

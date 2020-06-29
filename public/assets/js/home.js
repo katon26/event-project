@@ -17,6 +17,18 @@ jQuery(document).ready(function ($) {
     return false;
   });
 
+  // event desc
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('#headerBox').addClass('header-fixed');
+    } else {
+      $('#headerBox').removeClass('header-fixed');
+    }
+  });
+
+  // ticketbuy
+
+
   // Initiate the wowjs
   new WOW().init();
 
@@ -203,5 +215,11 @@ jQuery(document).ready(function ($) {
 
      });
 
+
+     // test qty //
+
+
+
+     // test qty //
 
 });

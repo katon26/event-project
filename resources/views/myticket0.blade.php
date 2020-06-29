@@ -8,36 +8,51 @@
 
 <div id="konten" class="container">
 
-  <section id="carousel">
-    <div class="container">
-      <h1 class="wu-title">Java Open Air 2020</h1>
+  <div id="headerBox">
+  	<div class="container">
+        <h1 class="wu-title">Java Open Air 2020</h1>
 
-      <div class="row-de">
-        <p class="wu-text">Created by: EO Name</p>
-        <p class="wu-text">Status: Reschedule</p>
-      </div>
+        <div class="row">
+          <p class="wu-title">Created by:
+            <span class="wu-text">EO Name</span>
+          </p>
+          <p class="wu-title" style="margin-left: 50px;">Status:
+            <span class="wu-text">Reschedule</span>
+          </p>
+        </div>
 
-        <div class="columns right-col float-right">
-          <div class="detail-de">
+          <div class="columns right-col float-right">
+            <div class="detail-de">
 
-          <div class="row-de">
-            <div class="info-de">
-              <p><i class="fa fa-calendar" aria-hidden="true" style="margin-right: 16px;"></i>
-                <span class="wu-text"> April 27, 2020 | 11:00:00 </span>
-              </p>
+            <div class="row-de">
+              <div class="info-de">
+                <p><i class="fa fa-calendar" aria-hidden="true" style="margin-right: 16px;"></i>
+                  <span class="wu-text"> April 27, 2020 | 11:00:00 </span>
+                </p>
+              </div>
 
-              <p><i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 16px;"></i>
-                <span class="wu-text"> Jogja Expo Center </span>
-              </p>
+            <div class="row-de">
+              <div class="info-de">
+                <p><i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 16px;"></i>
+                  <span class="wu-text"> Jogja Expo Center </span>
+                </p>
+              </div>
+            </div>
 
-              <p><i class="fa fa-globe" aria-hidden="true" style="margin-right: 16px;"></i>
-                <span><a href="https://www.google.com/maps?q=Jogja Expo Center" class="wu-text">View in Maps</a></span>
-              </p>
+              <div class="info-de">
+                <p><i class="fa fa-globe" aria-hidden="true" style="margin-right: 16px;"></i>
+                  <span><a href="https://www.google.com/maps?q=Jogja Expo Center" class="wu-title">View in Maps</a></span>
+                </p>
+              </div>
+            </div>
+
+
+
             </div>
           </div>
 
-        </div>
-  </section>
+      </div>
+  	</div>
 
   <section id="carousel">
     <div class="container wow fadeIn">
