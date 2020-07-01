@@ -33,60 +33,64 @@
       <!-- </div> -->
       </div>
 
-
       <div id="ticketbuy" class="ticket-column padside-12">
-        <div class="ticket-place">
-          <div class="ticket-header">
-            Ticket Category
-          </div>
-          <div class="box-category">
-            <div class="ticketPlace">
-              <div class="outsideBox">
-                <div class="box-price" style="display: flex; align-items: center; padding: 5px 10px; border-left: 5px solid rgb(255, 238, 0);">
-                  <p style="margin: 0px; color: rgb(146, 146, 146); font-weight: 500; font-size: 12px; line-height: 180%;"> PRESALE 1
-                    <br>
-                      <strong style="font-size: 14px;">Rp&nbsp;75.000</strong>
-                    </p>
-                    <div style="margin-left: auto;">
-                      <a class="btn-soldOut">Sold Out</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="outsideBox">
-                  <div class="box-price" style="display: flex; align-items: center; padding: 5px 10px; border-left: 5px solid rgb(255, 138, 0);">
-                    <p style="margin: 0px; color: rgb(146, 146, 146); font-weight: 500; font-size: 12px; line-height: 180%;"> PRESALE 2
-                      <br>
-                        <strong style="font-size: 14px;">Rp&nbsp;175.000</strong>
-                      </p>
-                      <div style="margin-left: auto;">
-                        <a class="button btn-soldOut">Sold Out</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="outsideBox">
-                    <div class="box-price" style="display: flex; align-items: center; padding: 5px 10px; border-left: 5px solid rgb(15, 176, 160);">
-                      <p style="margin: 0px; color: rgb(146, 146, 146); font-weight: 500; font-size: 12px; line-height: 180%;"> OTS
-                        <br>
-                          <strong style="font-size: 14px;">Rp&nbsp;250.000</strong>
-                        </p>
-                        <div style="margin-left: auto;">
-                          <a class="button btn-soldOut">Sold Out</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="checkOutBox">
-                  <div class="priceTotal">
-                    <p>SubTotal</p>
-                    <p class="amount">Rp&nbsp;0</p>
-                  </div>
-                  <div id="buy-btn" class="checkOutButton">
-                    <a class="wu-btn" href="/detailevent" style="cursor: default;">Checkout</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+	<div class="ticket-place">
+		<div class="ticket-header">
+          Ticket Category
+        </div>
+		<div class="box-category">
+			<div class="ticketPlace">
+				<table id="ticketcheckout" class="table table-responsive table-hover">
+					<tfoot>
+						<tr>
+							<td class="checkOutBox">
+									<div class="priceTotal">
+										<p>GrandTotal</p>
+										<p id="total" class="total">Rp0</p>
+									</div>
+									<div id="buy-btn" class="checkOutButton">
+										<a class="wu-btn" href="/detailevent" style="cursor: default;">Checkout</a>
+									</div>
+							</td>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr class="ticketcat">
+							<td>
+                Presale 1<br>
+                <strong style="font-size: 14px; color:#929292;">Rp&nbsp;<input type="text" class="price" value="175000" disabled="true"></strong>
+                <br>
+                <strong style="font-size: 14px; color:#929292;">Total : Rp&nbsp;<span id="amount" class="amount">Rp. 0</span></strong>
+              </td>
+							<td>
+								<select value="" name="qty" class="qty form-control">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+							</td>
+							</tr>
+							<tr class="ticketcat">
+								<td>
+                  Presale 2</br>
+                  <strong style="font-size: 14px; color:#929292;">Rp&nbsp;<input type="text" value="300000" class="price" disabled="true"></strong>
+                  <br>
+                  <strong style="font-size: 14px; color:#929292;">Total : Rp&nbsp;<span id="amount" class="amount">Rp. 0</span></strong>  
+                </td>
+								<td>
+									<select value="" name="qty" class="qty form-control">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+									</select>
+								</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
 
   </section>
 

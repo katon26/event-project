@@ -27,6 +27,29 @@ jQuery(document).ready(function ($) {
   });
 
   // ticketbuy
+             $(document).ready(function(){
+                            total();
+                            $('.qty').change(function() {
+                                total();
+                            });
+                            $('.amount').change(function() {
+                                total();
+                            });
+                        });
+
+                        function total()
+                        {
+                            var sum = 0;
+                            $('#ticketcheckout > tbody > tr').each(function() {
+                                var qty = $(this).find('option:selected').val();
+                                var price = $(this).find('.price').val();
+                                var amount = (qty*price);
+                                sum+=amount;
+                                $(this).find('.amount').text(''+amount);
+                            });
+                            $('.total').text(sum);
+                        }
+
 
 
   // Initiate the wowjs

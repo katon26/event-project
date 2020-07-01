@@ -1212,6 +1212,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #828282;
 }
 
+.priceTotal p:nth-child(3) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282;
+}
+
 .priceTotal p {
     margin: 0;
 }
@@ -1224,7 +1231,29 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 8px;
 }
 
-.checkOutBox {
+.priceTotal p:nth-child(4) {
+    color: #f48a00;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 8px;
+}
+
+.price {
+  background: transparent;
+  font-size: 14px;
+  font-weight: bold;
+  color: #929292;
+}
+
+.amount {
+  background: transparent;
+  font-size: 14px;
+  font-weight: bold;
+  color: #929292;
+}
+
+td .checkOutBox {
     border-radius: 0 0 5px 5px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1290,7 +1319,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-left: auto;
 }
 
-
+.table td, .table th {
+  border-top: transparent;
+}
 
 /* END TICKET CATEGORY */
 
