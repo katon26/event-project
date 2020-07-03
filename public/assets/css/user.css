@@ -404,6 +404,63 @@ Welcome User! - DASHBOARD
   border: 2px solid #303F9F;
 }
 
+/* usercontent */
+
+#usercontent {
+  background: #172029;
+  background-size: cover;
+  padding: 80px 0;
+  position: relative;
+  margin-top: 92px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1200px){
+#usercontent {
+    max-width: 1357px;
+  }
+}
+
+#usercontent .wu-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#usercontent .wu-text {
+  color: #fff;
+}
+
+@media (min-width: 769px) {
+  #usercontent .wu-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+#usercontent .wu-btn {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#usercontent .wu-btn:hover {
+  background: #303F9F;
+  border: 2px solid #303F9F;
+}
+
+/* end of usercontent */
+
 /* buat Laporan-Saya*/
 #back-to-dashboard {
   background: transparent;
@@ -1075,8 +1132,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #detail-container .user-activity-card .u-img .cover-img {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 144px;
 }
 
 #detail-container .m-b-25 {
@@ -1130,6 +1187,27 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #detail-container .text-center {
     margin-top: 15px;
+}
+
+#detail-container .wu-btn {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  /* margin: 10px; */
+  border: 2px solid #000;
+  color: #000;
+}
+
+#detail-container .wu-btn:hover {
+  background: #303F9F;
+  border: 2px solid #303F9F;
+  color: #fff
 }
 
 /* END LAPORAN TERBARU */
@@ -1249,6 +1327,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   font-size: 14px;
   min-height:100%;
+  margin-top: 200px;
+  clear: both;
+  position: relative;
 }
 
 #footeruser .copyright {
@@ -1419,7 +1500,7 @@ iframe {
   position: relative;
   border: 1px solid #e6e6e6;
   border-radius: 13px;
-  padding: 10px 30px 9px 22px;
+  padding: 10px 20px 10px 20px;
   margin-bottom: 20px;
 }
 
@@ -1544,6 +1625,7 @@ textarea.input100 {
 
   .wrap-input100 {
     padding: 10px 10px 9px 10px;
+    right: 14px;
   }
 }
 
@@ -1971,7 +2053,8 @@ textarea.input100 {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 440px;
+  max-height: 500px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -2001,7 +2084,7 @@ textarea.input100 {
 .close {
   position: absolute;
   /* top: 15px; */
-  right: 35px;
+  right: 423px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
@@ -2015,10 +2098,16 @@ textarea.input100 {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 700px){
+  .close {
+    right: 15px;
+  }
+}
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
-    width: 100%;
+    width: 81%;
   }
 }
 
@@ -2148,7 +2237,7 @@ textarea.input100 {
     color: #e74c3c;
     }
 
-    .search_icon{
+    .search_icon {
     height: 40px;
     width: 40px;
     float: right;
@@ -2158,4 +2247,277 @@ textarea.input100 {
     border-radius: 50%;
     color:white;
     text-decoration:none;
+    }
+
+    /* TICKET CATEGORY */
+
+    .ticket-column {
+        -ms-flex: none!important;
+        flex: none!important;
+        -webkit-box-flex: 0!important;
+        min-width: 350px;
+        max-width: 358px;
+    }
+
+    .padside-12 {
+        margin: 0 12px;
+    }
+
+    .ticket-place {
+        position: absolute;
+        min-width: 370px;
+        -webkit-box-shadow: 0 1px 0 hsla(0,0%,77.6%,.4);
+        box-shadow: 0 1px 0 hsla(0,0%,77.6%,.4);
+        top: 30px;
+        right: 40px;
+    }
+
+    .ticket-header {
+        background: #fff;
+        height: 68px;
+        border: 1px solid #e5e5e5;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-radius: 5px 5px 0 0;
+        color: #172029;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 180%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-left: 19px;
+    }
+
+    .box-category {
+        width: 100%;
+        background-color: #fbfbfb;
+        border: 1px solid #e5e5e5;
+        padding: 25px;
+        overflow: auto;
+        padding: 25px 25px 5px 25px;
+    }
+
+    .btn-soldOut {
+        font-weight: 500;
+        color: #D32F2F!important;
+        cursor: default;
+
+    }
+
+
+    .priceTotal p:first-child {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #828282;
+    }
+
+    .priceTotal p:nth-child(3) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #828282;
+    }
+
+    .priceTotal p {
+        margin: 0;
+    }
+
+    .priceTotal p:nth-child(2) {
+        color: #f48a00;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 8px;
+    }
+
+    .priceTotal p:nth-child(4) {
+        color: #f48a00;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 8px;
+    }
+
+    .price {
+      background: transparent;
+      font-size: 14px;
+      font-weight: bold;
+      color: #929292;
+    }
+
+    .amount {
+      background: transparent;
+      font-size: 14px;
+      font-weight: bold;
+      color: #929292;
+    }
+
+    td .checkOutBox {
+        border-radius: 0 0 5px 5px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: #fff;
+        height: 80px;
+        border: 1px solid #e5e5e5;
+        padding: 16px;
+    }
+
+    .checkOutButton {
+        margin-left: auto;
+    }
+
+    .newButton {
+        background: #303F9F;
+        padding: 14px;
+        width: 150px;
+        height: 50px;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #fff;
+    }
+
+    #buy-btn .wu-btn {
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 8px 30px;
+        border-radius: 50px;
+        transition: 0.5s;
+        margin: 10px;
+        border: 2px solid #303F9F;
+        color: #303F9F;
+    }
+
+    #buy-btn .wu-btn:hover {
+      background: #fff;
+      border: 2px solid #303F9F;
+    }
+
+    /* .white-text {
+        color: #000!important;
+    } */
+
+    #ticketbuy {
+        max-width: 1200px;
+    }
+
+    #ticketbuy {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .table td, .table th {
+      border-top: transparent;
+    }
+
+    /* eventdesc */
+
+    #eventdesc {
+      background: #172029;
+      background-size: cover;
+      padding: 80px 0;
+      position: relative;
+      margin-top: 92px;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: 1200px){
+    #eventdesc {
+        max-width: 1357px;
+      }
+    }
+
+    #eventdesc .wu-title {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    #eventdesc .wu-text {
+      color: #fff;
+    }
+
+    @media (min-width: 769px) {
+      #eventdesc .wu-btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+
+    #eventdesc .wu-btn {
+      font-family: "Poppins", sans-serif;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 8px 30px;
+      border-radius: 50px;
+      transition: 0.5s;
+      margin: 10px;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    #eventdesc .wu-btn:hover {
+      background: #303F9F;
+      border: 2px solid #303F9F;
+    }
+
+    /* end of eventdesc */
+
+    @media (max-width: 768px) {
+       .ticketcat td {
+         display: block;
+         overflow: auto;
+         height: 200px;
+         width: 100%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .ticketcat td {
+        display: block;
+        overflow: auto;
+        height: 200px;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+       .ticketcat td:nth-child(n+2){
+         display: block;
+         overflow: auto;
+         height: 200px;
+         width: 100%;
+         margin-bottom: -120px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .ticketcat td:nth-child(n+2){
+        display: block;
+        overflow: auto;
+        height: 200px;
+        width: 100%;
+        margin-bottom: -120px;
+      }
     }

@@ -1440,6 +1440,9 @@ td .checkOutBox {
   color: #fff;
   font-size: 14px;
   min-height:100%;
+  margin-top: 200px;
+  clear: both;
+  position: relative;
 }
 
 #footeruser .copyright {
@@ -1758,7 +1761,7 @@ textarea.input100 {
 }
 
 @media (max-width: 576px) {
-  #ticktbuy .ticket-place {
+  #ticketbuy .ticket-place {
     position: inherit;
     min-width: 350px;
     -webkit-box-shadow: 0 1px 0 hsla(0,0%,77.6%,.4);

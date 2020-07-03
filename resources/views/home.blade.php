@@ -17,8 +17,8 @@
           <div class="row">
             <div class="col-lg-9 text-center text-lg-left">
               <h3 class="wu-title">Welcome to SITENAME</h3>
-              <p class="wu-text"> is an integrated online ticketing platform & One Stop Shopping Event Support.
-                We provide system admin services for selling both through ticket box and online stores. 
+              <p class="wu-text">SITENAME is an integrated online ticketing platform & One Stop Shopping Event Support.
+                We provide system admin services for selling both through ticket box and online stores.
                 Sales are also supported by official partners who have collaborated with us,
                  in addition to that we also provide supporting equipment for the event.</p>
             </div>

@@ -41,20 +41,7 @@
 		<div class="box-category">
 			<div class="ticketPlace">
 				<table id="ticketcheckout" class="table table-responsive table-hover">
-					<tfoot>
-						<tr>
-							<td class="checkOutBox">
-									<div class="priceTotal">
-										<p>GrandTotal</p>
-										<p id="total" class="total">Rp0</p>
-									</div>
-									<div id="buy-btn" class="checkOutButton">
-										<a class="wu-btn" href="/detailevent" style="cursor: default;">Checkout</a>
-									</div>
-							</td>
-						</tr>
-					</tfoot>
-					<tbody>
+					<tbody style="display:block; overflow:auto; height:200px; width:100%;">
 						<tr class="ticketcat">
 							<td>
                 Presale 1<br>
@@ -75,7 +62,7 @@
                   Presale 2</br>
                   <strong style="font-size: 14px; color:#929292;">Rp&nbsp;<input type="text" value="300000" class="price" disabled="true"></strong>
                   <br>
-                  <strong style="font-size: 14px; color:#929292;">Total : Rp&nbsp;<span id="amount" class="amount">Rp. 0</span></strong>  
+                  <strong style="font-size: 14px; color:#929292;">Total : Rp&nbsp;<span id="amount" class="amount">Rp. 0</span></strong>
                 </td>
 								<td>
 									<select value="" name="qty" class="qty form-control">
@@ -85,7 +72,36 @@
 									</select>
 								</td>
 								</tr>
+                <tr class="ticketcat">
+  								<td>
+                    Presale 3</br>
+                    <strong style="font-size: 14px; color:#929292;">Rp&nbsp;<input type="text" value="300000" class="price" disabled="true"></strong>
+                    <br>
+                    <strong style="font-size: 14px; color:#929292;">Total : Rp&nbsp;<span id="amount" class="amount">Rp. 0</span></strong>
+                  </td>
+  								<td>
+  									<select value="" name="qty" class="qty form-control">
+  										<option value="0">0</option>
+  										<option value="1">1</option>
+  										<option value="2">2</option>
+  									</select>
+  								</td>
+  								</tr>
 							</tbody>
+
+              <tfoot>
+    						<tr>
+    							<td class="checkOutBox">
+    									<div class="priceTotal">
+    										<p>GrandTotal</p>
+    										<p id="total" class="total">Rp0</p>
+    									</div>
+    									<div id="buy-btn" class="checkOutButton">
+    										<a class="wu-btn" href="/detailevent" style="cursor: default;">Checkout</a>
+    									</div>
+    							</td>
+    						</tr>
+    					</tfoot>
 						</table>
 					</div>
 				</div>
