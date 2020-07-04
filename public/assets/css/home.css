@@ -1195,6 +1195,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 25px;
     overflow: auto;
     padding: 25px 25px 5px 25px;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .btn-soldOut {

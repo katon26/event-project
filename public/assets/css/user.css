@@ -1100,8 +1100,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #detail-container .card {
     border-radius: 5px;
-    -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
-    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    /* -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08); */
+    /* box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08); */
     border: none;
     margin-bottom: 50px;
 }
@@ -2264,12 +2264,12 @@ textarea.input100 {
     }
 
     .ticket-place {
-        position: absolute;
+        /* position: absolute; */
         min-width: 370px;
         -webkit-box-shadow: 0 1px 0 hsla(0,0%,77.6%,.4);
         box-shadow: 0 1px 0 hsla(0,0%,77.6%,.4);
         top: 30px;
-        right: 40px;
+        /* right: 40px; */
     }
 
     .ticket-header {
@@ -2298,6 +2298,7 @@ textarea.input100 {
         border: 1px solid #e5e5e5;
         padding: 25px;
         overflow: auto;
+        border-radius: 0px 0px 5px 5px;
         padding: 25px 25px 5px 25px;
     }
 
@@ -2425,7 +2426,9 @@ textarea.input100 {
 
     .table td, .table th {
       border-top: transparent;
+      background-color: transparent;
     }
+
 
     /* eventdesc */
 
@@ -2483,6 +2486,10 @@ textarea.input100 {
     }
 
     /* end of eventdesc */
+
+    .ticketcat {
+      border-bottom: outset;
+    }
 
     @media (max-width: 768px) {
        .ticketcat td {

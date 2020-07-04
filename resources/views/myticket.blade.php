@@ -51,7 +51,7 @@
                                 </td>
                   							<td>
                   								<a class="wu-btn align-middle" href="/detailevent">Event Details</a>
-                                  <span><a class="wu-btn align-middle" href="/detailticket">Ticket Details</a></span>
+                                  <a class="wu-btn align-middle" href="/detailticket">Ticket Details</a>
                   							</td>
                               </tr>
 
